@@ -1,0 +1,23 @@
+{
+  "kind": "PodList",
+  "apiVersion": "v1",
+  "metadata": { "resourceVersion": "554321" },
+  "items": [
+    {
+      "metadata": { "name": "robin-storage-node-01", "namespace": "robin-system" },
+      "status": {
+        "phase": "Running",
+        "hostIP": "10.0.0.51",
+        "podIP": "192.168.1.5"
+      }
+    },
+    {
+      "metadata": { "name": "robin-ui-portal", "namespace": "default" },
+      "status": {
+        "phase": "Pending",
+        "hostIP": null,
+        "podIP": null
+      }
+    }
+  ]
+}

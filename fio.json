@@ -1,0 +1,23 @@
+{
+  "fio_version": "fio-3.28",
+  "timestamp_ms": 1710842400000,
+  "jobs": [
+    {
+      "jobname": "robin-vol-write",
+      "read": { "iops": 0, "bw_bytes": 0 },
+      "write": {
+        "iops": 4500.5,
+        "bw_bytes": 18434048,
+        "clat_ns": {
+          "min": 1502,
+          "max": 850304,
+          "mean": 4205.1,
+          "percentile": {
+            "95.000000": 6200,
+            "99.000000": 12400
+          }
+        }
+      }
+    }
+  ]
+}
