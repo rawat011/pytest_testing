@@ -22,7 +22,7 @@ jobs:
         env:
           API_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
-          pytest --html=report.html --self-contained-html
+          pytest -v -s test_requests.py --html=report.html --self-contained-html
 
       - name: Upload test artifacts
         if: always()
