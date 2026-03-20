@@ -1,5 +1,11 @@
 name: request automation workflow
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   api-tests:
     runs-on: ubuntu-latest
