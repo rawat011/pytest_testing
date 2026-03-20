@@ -25,7 +25,7 @@ jobs:
 
       - name: Upload Artifacts
         if: always()
-        uses: actions/upload-artifacts@v5
+        uses: actions/upload-artifact@v5
         with:
           name: results
           path: report.html
