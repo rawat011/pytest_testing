@@ -2,9 +2,10 @@ name: Test retry Logic
 on:
   push:
     branches:
-    - '**'
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test-k8s:
