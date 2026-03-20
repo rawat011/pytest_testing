@@ -2,10 +2,10 @@ name: request automation workflow
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   api-tests:
     runs-on: ubuntu-latest
