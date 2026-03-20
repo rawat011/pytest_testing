@@ -2,7 +2,7 @@ name: request automation workflow
 on:
   push:
     branches:
-      - main
+      - '**'
   pull_request:
     branches:
       - main

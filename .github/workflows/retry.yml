@@ -1,7 +1,8 @@
 name: Test retry Logic
 on:
   push:
-    branches: [ main ]
+    branches:
+    - '**'
   pull_request:
     branches: [ main ]
 
