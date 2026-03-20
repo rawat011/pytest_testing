@@ -1,0 +1,33 @@
+name: Test retry Logic
+on: [push]
+
+jobs:
+  test-k8s:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v5
+
+      - name: Python Setup
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Tests
+        run: |
+          pytest -v -s retry.py --html=report.html --self-contained-html
+
+      - name: Upload Artifacts
+        if: always()
+        uses: actions/upload-artifacts@v5
+        with:
+          name: results
+          path: report.html
+
+
