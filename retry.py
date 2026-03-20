@@ -18,3 +18,6 @@ def check_status(status):
 def test_check_status():
     status = get_status()
     assert check_status(status)
+
+def test_test1():
+    pass
